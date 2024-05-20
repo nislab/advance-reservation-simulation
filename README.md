@@ -22,5 +22,9 @@ The simulation directory contains three branches:
 
 In all cases, blah blah blah
 
+The analysis directory contains MATLAB scripts for further processing of results.
+
+## 
+
 
 
