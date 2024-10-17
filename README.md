@@ -13,7 +13,9 @@ The below figure provides additional details:
 In this example Customers 1,2,3 arrive in that order at times *t_i* with requesting starting service times *s_i* during the service period. The priority order is determined by the order of arrivals, however here Customer 2 has the earliest request and is permitted to enter service first. With preemptive policies in effect, Customer 1 is permitted to enter service at their start time despite Customer 2 being in service. Customer 3, having the lowest priority, must wait for both the customers to complete service and thus enters service slightly after their desired reservation time.
 
 Readers are directed to the following citation for further details on the AR system:
+
 Chamberlain, Jonathan, Eran Simhon, and David Starobinski. "Preemptible queues with advance reservations: Strategic behavior and revenue management." *European Journal of Operational Research* 293.2 (2021): 561-578.
+
 -------------------
 ## Dependencies
 
