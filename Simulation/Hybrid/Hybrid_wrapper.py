@@ -1,9 +1,9 @@
 """
-Wrapper to define values for MM1_PR_sim Simulator, define save files for statistics, figure
+Wrapper to define values for MM1_HPR_sim Simulator, define save files for statistics, figure
 Author: Jonathan Chamberlain, 2018 jdchambo@bu.edu
 """
 
-from MM1_PR_sim import Simulator
+from Simulation.Hybrid.Hybrid_sim import Simulator
 import os
 
 '''
@@ -14,6 +14,7 @@ Fix Mu at 1
 Save Mean wait times, error bounds, normalized error per threshold
 Save figures for each run
 '''
+
 lam = [0.1, 0.5, 0.9]
 
 for i in range(3):

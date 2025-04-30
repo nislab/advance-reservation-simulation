@@ -3,7 +3,7 @@ Wrapper to define values for MM1_NP_Revsim Simulator, define save files for stat
 Author: Jonathan Chamberlain, 2018 jdchambo@bu.edu
 """
 
-from MM1_HPR_Revsim import Simulator
+from Simulation.Preemptive_Resume.PR_Revsim import Simulator
 import os
 
 '''

@@ -3,7 +3,7 @@ Wrapper to define values for MM1_NP_sim Simulator, define save files for statist
 Author: Jonathan Chamberlain, 2018 jdchambo@bu.edu
 """
 
-from MM1_NP_sim import Simulator
+from Simulation.Non_Preemptive.NP_sim import Simulator
 import os
 
 '''
