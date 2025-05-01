@@ -14,7 +14,7 @@ During the ervice period, customers are queued baed on the desired service time,
 
 *(the abuse of notation is intentional)
 
-The below figure provides a visual example, assuming the Preemptive Resume model^([1,2]): 
+The below figure provides a visual example, assuming the Preemptive Resume model<sup>[1,2]</sup>: 
 
 ![A sample Advance Reservation secnario featuring three customers](/Eran_example.png?raw=true "AR Example")
 
