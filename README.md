@@ -14,9 +14,9 @@ During the ervice period, customers are queued baed on the desired service time,
 
 *(the abuse of notation is intentional)
 
-The below figure provides a visual example, assuming the Preemptive Resume model: 
+The below figure provides a visual example, assuming the Preemptive Resume model^([1,2]): 
 
-![A sample Advance Reservation secnario featuring three customers](/Eran_example.png?raw=true "AR Example")^[1,2]
+![A sample Advance Reservation secnario featuring three customers](/Eran_example.png?raw=true "AR Example")
 
 In this example Customers 1,2,3 arrive in that order at times *t_i* with requesting starting service times *s_i* during the service period. The priority order is determined by the order of arrivals, however here Customer 2 has the earliest request and is permitted to enter service first. With preemptive policies in effect, Customer 1 is permitted to enter service at their start time despite Customer 2 being in service. Customer 3, having the lowest priority, must wait for both the customers to complete service and thus enters service slightly after their desired reservation time.
 
