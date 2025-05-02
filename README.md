@@ -27,7 +27,7 @@ Readers are directed to the following citation for further details on the AR sys
 [2] Figure first appeared in Simhon, Eran and David Starobinski. "Equilibrium and Learning in Queues with Advance Reservations" Preprint: arXiv:1806.08016 [cs.GT]
 
 --------------
-## Usage
+# Usage
 
 The simulation directory contains three branches, corresponding to the policies described in the introduction above:
 
@@ -51,7 +51,7 @@ To plot visualizations using matplotlib, call the XX_simanalysis.py file in the 
 
 For a visualization of how the Hybrid vs the PR wait times and corresponding costs compare analytically, simply call the corresponding XX_wait_time_analysis.py files - these do not depend on any simulations having been run.
 
-# Dependencies
+## Dependencies
 
 The main simulation utilizes Python code, specifically [SimPy](https://simpy.readthedocs.io/en/latest/contents.html)
 
@@ -78,7 +78,7 @@ conda install matplotlib
 
 Any relevant matplotlib dependencies are automatically installed. Alternatively, the simualtor output as described below are CSV files which can be imported into elsewhere, e.g. MATLAB for visualization/analysis if one so chooses.
 
-# Inputs
+## Inputs
 
 The intent is that the wrappers be used when calling the simulators, so that multiple simulations can be run in a single routine - however it is possible to run a single iteration by calling the XX_sim.py file directly provided all proper inputs are supplied to save off the relevant data. 
 
@@ -103,7 +103,7 @@ Currently, the revwrapper is hardcoded to consider values in the range 0.1 to 0.
 
 The above values are then passed into the Simulator to iterate over each combination of lambda, mu, and phi specified.
 
-# Parameters
+## Parameters
 
 The following parameters within XX_Sim and XX_Revsim can be adjusted to modify the simulation further as necessary:
 
@@ -116,7 +116,7 @@ The following parameters within XX_Sim and XX_Revsim can be adjusted to modify t
 
 To adjust any of the parameters, the appropriate XX_Sim or XX_Revsim file must be edited directly.
 
-# Simulator  
+## Simulator  
 
 The main Simulator loop consists of an M/M/1 (Poisson Arrivals, Exponential Service) queue simulator, originally used to validate claims from the EJOR paper cited above and Jonathan Chamberlain's MS thesis. Within the loop, constructs to compute the mean wait time for each discrete bucket of customers, number of customers in each bucket, and the computed cost of reservation are created. 
 
@@ -144,7 +144,7 @@ To work around this, in the Hybrid case, Ghosts of priority PHI+epsilon are gene
 
 The wait times of the Ghosts are recorded to be used as the basis for computing the AR costs, as the difference of wait times at the threshold determines whether the offered fee is worth accepting the offer.
 
-# Outputs
+## Outputs
 
 Following all iterations, the simulator computes and saves the following into the files specified above in the Inputs section:
 
@@ -158,8 +158,6 @@ Following all iterations, the simulator computes and saves the following into th
 * error_R - the associated 95% CI sample error of the revenues
 
 ----------
-## 
-
 # License
 
 
